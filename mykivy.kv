@@ -1,0 +1,62 @@
+MDFloatLayout:
+    location: location
+    temperature: temperature
+    weather : weather
+    humidity: humidity
+    wind : wind
+    md_bg_color : 1,1,1,1
+    Image :
+        source :"files/loc.png"
+        size_hint : 0.1 , 0.1
+        pos_hint : {"center_x" : 0.5, "center_y" : 0.95}
+    MDLabel :
+        id:location
+        text:""
+        pos_hint : {"center_x" : 0.5, "center_y" : 0.85}
+        halign : "center"
+        font_size : "20sp"
+        font_name : "SHOWG.TTF"
+    MDLabel :
+        id:temperature
+        text:""
+        markup: True
+        pos_hint : {"center_x" : 0.5, "center_y" : 0.75}
+        halign : "center"
+        font_size : "60sp"
+        font_name : "CALIST.TTF"
+    MDLabel :
+        id:weather
+        text:""
+        markup: True
+        pos_hint : {"center_x" : 0.5, "center_y" : 0.65}
+        halign : "center"
+        font_size : "20sp"
+        font_name : "CALISTB.TTF"
+    MDFloatLayout:
+        id:humidity
+        pos_hint: {"center_x" : 0.25, "center_y" :0.4} 
+        size_hint : .22,.1
+        Image :
+            source :"files/hum.png"
+            pos_hint : {"center_x" : .1, "center_y" : 0.5}
+        MDLabel :
+            id:humidity
+            text:""
+            pos_hint : {"center_x" : 0.6, "center_y" : 0.55}
+            halign : "center"
+            font_size : "18sp"
+            font_name : "CALISTB.TTF"
+    MDFloatLayout:
+        id:wind
+        pos_hint: {"center_x" : 0.75, "center_y" :0.4} 
+        size_hint : .22,.1
+        Image :
+            source :"files/wind.png"
+            pos_hint : {"center_x" : .7, "center_y" : 0.5}
+        MDLabel :
+            id:wind
+            text:""
+            pos_hint : {"center_x" : 0.1, "center_y" : 0.55}
+            halign : "center"
+            font_size : "18sp"
+            font_name : "CALISTB.TTF"
